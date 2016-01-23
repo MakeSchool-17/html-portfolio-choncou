@@ -175,7 +175,7 @@ textarea {
 body{
     font-family: 'Roboto', sans-serif;
     color: #FFFFFF;
-    background-color: #212121;
+    background-color: #333333;
 }
 
 .serif-font{
@@ -258,12 +258,12 @@ nav ul{
     border-top: solid 10px #03A9F4;
 }
 
-.dark-primary-color    { background: #212121; }
+.dark-primary-color    { background: #333333; }
 .default-primary-color { background: #9C27B0; }
 .light-primary-color   { background: #E1BEE7; }
 .text-primary-color    { color: #FFFFFF; }
 .accent-color          { background: #03A9F4; }
-.primary-text-color    { color: #212121; }
+.primary-text-color    { color: #333333; }
 .secondary-text-color  { color: #727272; }
 .divider-color         { border-color: #B6B6B6; }
 
@@ -273,8 +273,9 @@ nav ul{
 
 #intro{
     width: 95%;
-    min-height: 70vh;
+    min-height: 71vh;
     border: solid 10px white;
+    border-bottom: dashed 5px white;
     margin: 0 auto;
 }
 
@@ -302,12 +303,12 @@ nav ul{
 
 .down-arrow{
     width: 60px;
-    -webkit-transition: color 150ms, margin-top 250ms;
+    -webkit-transition: color 150ms, margin-top 250ms, width 150ms;
 }
 
 .down-arrow:hover{
     width: 80px;
-    margin-top: 10px;
+    margin-top: 6px;
     cursor: pointer;
 }
 
@@ -322,11 +323,76 @@ nav ul{
    ========================= */
 
 #about{
-    width: 100%;
+    /*min-height: 100vh;*/
+    /*border: solid 10px #03A9F4;*/
+    /*background-color: white;*/
+    /*margin: 5px auto;*/
+    /*color: #333333;*/
     min-height: 100vh;
-    border: solid 10px #212121;
-    background-color: white;
-    margin: 0 auto;
+    width: 95%;
+    border: solid 10px white;
+    border-top: dashed 5px white;
+    border-bottom: dashed 5px white;
+    background-color: #333333;
+    margin: 5px auto;
+    color: white;
+}
+
+.about-titles{
+    letter-spacing: 3px;
+    font-size: 120%;
+    margin: 30px 10px 30px 10px;
+    text-align: center;
+}
+
+.about-titles h1{
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+#about-sub, #about-down{
+    opacity: 0;
+}
+
+#about-down{
+    margin: 50px 0 0 0;
+}
+
+.skill-item{
+    width: 90px;
+    height: 90px;
+    margin: 15px 15px;
+    -webkit-filter: grayscale(15%);
+    -webkit-transition: width 250ms, height 250ms;
+
+}
+
+#skills{
+    opacity: 0;
+}
+
+.skill-item:hover{
+    width: 120px;
+    height: 120px;
+    -webkit-filter: grayscale(0%);
+}
+
+/* =========================
+   Projects
+   ========================= */
+#projects{
+    min-height: 100vh;
+    width: 95%;
+    border: solid 10px white;
+    border-top: dashed 5px white;
+    border-bottom: dashed 5px white;
+    background-color: #333333;
+    margin: 5px auto;
+    color: white;
+}
+
+#project-down{
+    margin: 50px 0 0 0;
 }
 
 /* ==========================================================================
