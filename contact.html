@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Unathi's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body>
+
+        <header class="header">
+            <nav class="nav">
+                <ul>
+                    <li class="nav-item"><a href="./index.html">Home</a></li>
+                    <li class="nav-item"><a href="./gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <h1 class="subtitle title">Contact Unathi</h1>
+            <form class="flex column" action="http://formspree.io/blog@unathichonco.com" method="POST">
+
+                <input class="email form-element" type="email" name="_replyto" placeholder="john.smith@checkya.com" required="true"/>
+                <textarea class="message form-element" rows="10" cols="70" required="true" placeholder="Write me a letter"></textarea>
+                <input type="hidden" name="_subject" value="Email from Unathi's Profile" />
+                <input type="text" name="_gotcha" style="display:none" />
+                <input id="contact-button" class="form-element" type="submit" value="Send">
+
+            </form>
+
+        </section>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="./js/contact.js"></script>
+    </body>
