@@ -399,9 +399,13 @@ nav ul{
 
 
 #img-hero{
-    width: 50%;
-    margin-top: -25%;
+    width: 100%;
+    height: auto;
+}
 
+.img-hero{
+    margin-top: -30%;
+    width: 75%;
 }
 
 .social-logo{
